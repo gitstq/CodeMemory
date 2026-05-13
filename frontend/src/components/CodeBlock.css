@@ -1,0 +1,140 @@
+.code-block-wrapper {
+  background: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.code-language {
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #334155;
+  border: none;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background: #475569;
+}
+
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+.code-content {
+  display: flex;
+  overflow-x: auto;
+  padding: 16px 0;
+}
+
+.line-numbers {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px 0 16px;
+  border-right: 1px solid #334155;
+  user-select: none;
+}
+
+.line-number {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #64748b;
+  text-align: right;
+  min-width: 24px;
+}
+
+.code-content pre {
+  flex: 1;
+  margin: 0;
+  padding: 0 16px;
+  background: transparent;
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow: visible;
+}
+
+.code-content code {
+  font-family: inherit;
+}
+
+/* Syntax Highlighting Colors */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #64748b;
+}
+
+.token.punctuation {
+  color: #94a3b8;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f472b6;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a3e635;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #22d3ee;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #c084fc;
+}
+
+.token.function,
+.token.class-name {
+  color: #60a5fa;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #fbbf24;
+}

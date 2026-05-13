@@ -1,0 +1,237 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 24px;
+  color: white;
+  margin-bottom: 24px;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 32px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-bottom: 40px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: #475569;
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  font-size: 32px;
+  color: #3b82f6;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Recent Section */
+.recent-section {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.view-all-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-all-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.snippets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+/* Tags Section */
+.tags-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.tags-group {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.tags-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 16px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags-list .language-tag {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tags-list .tag-item {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .snippets-grid {
+    grid-template-columns: 1fr;
+  }
+}
